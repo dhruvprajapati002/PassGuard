@@ -22,7 +22,6 @@ import { PassGuardLogo } from "../components/Logo";
 import { useTheme } from "../contexts/ThemeContext";
 
 const api = import.meta.env.VITE_API_URL;
-console.log("API URL:", api); // Debugging line to check API URL
 
 // Custom Toast Components for Better Styling
 const CustomToast = ({ type, message, icon: Icon }) => (
