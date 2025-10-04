@@ -15,6 +15,8 @@ import {
 } from "lucide-react";
 import toast from "react-hot-toast";
 
+const api = import.meta.env.VITE_API_URL;
+
 // Enhanced Password Strength Checker (matching Register component)
 const getPasswordStrength = (password) => {
   let score = 0;
