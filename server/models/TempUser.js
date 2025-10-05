@@ -11,8 +11,8 @@ const tempUserSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now, expires: 300 }, // 5 mins TTL
 });
 
-// Index for better performance
-tempUserSchema.index({ email: 1 });
-tempUserSchema.index({ createdAt: 1 }, { expireAfterSeconds: 0 });
+// // Index for better performance
+// tempUserSchema.index({ email: 1 });
+// tempUserSchema.index({ createdAt: 1 }, { expireAfterSeconds: 0 });
 
 module.exports = mongoose.model("TempUser", tempUserSchema);
